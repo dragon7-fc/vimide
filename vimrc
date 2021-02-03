@@ -1,7 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
 " Install YouCompleteMe
-Plug 'Valloric/YouCompleteMe'
+Plug 'ycm-core/YouCompleteMe'
 
 
 " Nerdtree plugin
@@ -40,7 +40,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'joshdick/onedark.vim'
 
 " Auto ctags update on file change
-Plug 'soramugi/auto-ctags.vim'
+Plug 'craigemery/vim-autotag'
 
 Plug 'francoiscabrol/ranger.vim'
 Plug 'rbgrouleff/bclose.vim'
@@ -48,6 +48,10 @@ Plug 'rbgrouleff/bclose.vim'
 
 " My own plugin
 Plug 'arunachalashiva/mvndisp'
+
+Plug 'majutsushi/tagbar'
+Plug 'will133/vim-dirdiff'
+Plug 'joe-skb7/cscope-maps'
 
 call plug#end()
 
@@ -242,3 +246,11 @@ command! -nargs=0 OpenTerminal :call OpenTerm()
 
 "set mouse=a
 "set ttymouse=sgr
+
+set mouse=a
+
+" The NERD tree settings
+nmap <F3> :NERDTreeToggle<CR>
+
+" Tagbar settings
+nmap <F8> :TagbarToggle<CR>
